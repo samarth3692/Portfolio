@@ -1,0 +1,148 @@
+<!DOCT YPE html>
+<html lang="en">
+    <head>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-27735527-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'UA-27735527-1');
+        </script>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Samarth Singhal | Portofolio SIAT JIIT SFU HCI Flex-N-Feel">
+        <meta name="keywords" content="samarth, singhal, portfolio, siat, sfu, jiit, hci, Flex-N-Feel">
+        <meta name="robots" content="index, follow" >
+        <meta name="author" content="Samarth Singhal">
+        <link rel="icon" href="../img/favicon.ico" type="image/x-icon"  />
+        <title>Samarth Singhal | Smart-Crew</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <script src="../js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="../css/custom.css" >
+        <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700" rel="stylesheet">
+        
+    </head>
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top" >
+            <div class="container" style="padding-top:1em;">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar" style="background-color:black"></span>
+                    <span class="icon-bar" style="background-color:black"></span>
+                    <span class="icon-bar" style="background-color:black"></span>                        
+                    </button>
+                    <a class="navbar-brand" style="font-size:1.7em; color:black; font-weight: bold;" href="../">Samarth Singhal</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar" >
+                    <ul class="nav navbar-nav navbar-right">
+                        <li ><a href="../portfolio">Work</a></li>
+                        <li><a href="../publications">Publications</a></li>
+                        <li><a href="../Samarth_Singhal_CV.pdf" target="_blank">Resume</a></li>
+                        <li class="active"><a href="../about">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <br>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="headings">Smart Crew: In-Flight Collaboration Amongst Flight Attendants</div>
+        </div>
+        <div class="col-md-5">
+          <br>
+          <iframe src="https://player.vimeo.com/video/177172270" width="100%" height="290px"  frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          <p><a href="https://vimeo.com/168195362">Smart Crew: In-Flight Collaboration Amongst Flight Attendants</a></p>
+        </div>
+        <div class="col-md-5">
+          <br><span id="med">Description</span><br>
+          A smart-watch application for in-flight collaboration and awareness between crew members with real-time location updates using BLE beacons and real-time messaging via Node.js server and Web Sockets. 
+          <br><br>
+          I used BLE beacons inside the flight to track the location of flight attendants and used an event-driven server built using Node.js to send information to other smartwatch users. This server was also used to send messages and notification from one watch to another.
+          <br><br>
+          
+        </div>
+        <div class="col-md-2">
+          <br><span id="med">Role</span><br>
+          UX Developer<br>
+          
+          <br><span id="med">Collaborators</span><br>
+          <a href="http://www.carmster.com/">Carman Neustaedter</a> <br>
+          <a heref="http://veravibes.blogspot.ca/">Stephanie Wong</a><br>
+          Stephan Doubrava<br>
+          Alejandro Aranda<br>
+          Rock Leung<br>
+          Jonathan Sharp<br>
+        </div>
+      </div>
+      <div class="row" id="paper">
+        <div class="col-md-12" >
+          <b> Read the Paper here:</b><br>
+          Stephanie Wong, Samarth Singhal, Carman Neustaedter(2017) <a href="http://clab.iat.sfu.ca/pubs/Wong-SmartCrewDemo-CSCW2017.pdf">Smart Crew: A Smart Watch Design for Collaboration Amongst Flight Attendants, </a><span id="ital"> Proceedings of the Conference on Computer Supported Cooperative Work and Social Computing. </span>
+          <br><br>
+          Stephanie Wong, Samarth Singhal, Carman Neustaedter, Aynur Kadir (2017) <a href="http://clab.iat.sfu.ca/pubs/Wong-SmartCrew-CHI2017.pdf">Smart Crew: A Smart Watch Design for Collaboration Amongst Flight Attendants,</a> <span id="ital"> Proceedings of the Conference on Computer Human Interaction. </span>
+        </div>
+      </div>
+      <div class="dotbar"></div>
+      <br>  
+      <div class="row" id="paper">
+        <div class="col-md-12" >
+          <div style="font-size:1.8em; font-weight: bold; line-height: 200%;">CHALLENGE</div>
+          Collaboration is vital among flight attendants work activities amongst to ensure onboard safety and a high level of customer service. Yet, the challenge is it can be difficult to maintain efficient communication, situational awareness, and quick information exchange given the technologies advancements on the aircraft.  However, the existing communication channels in these flights become inaccessible, burdensome, and hard to use while performing emergency and even normal activities.
+          <br><br>
+          <div style="font-size:1.8em; font-weight: bold; line-height: 200%;">PROCESS</div>
+          Stephanie Wong conducted a study with flight attendants to understand their communication practices, problems faced by them during their routine tasks and the common communication challenges they face. Based on these results she proposed and designed the wireframes for a smart-watch application to solve this communication and awareness barrier among flight attendants.
+          <br><br>
+          <b>Development</b><br>
+          I translated the high-fidelity wireframes into a smart watch application design for Samsung gear S2 watch. The app was designed as a web-based application using the proprietary <b>Tizen SDK</b>. I selected the web-based approach to ensure the app could be easily scalable to other platforms in the future.
+          <br>
+          To enable real-time messaging I deployed an event-driven server built using <b>Node.js</b> and web sockets to support real-time communication and notifications to all or selected crew members.
+          <br>
+          I used <b>BLE beacons</b> inside the flight to track the location of flight attendants and update the flight attendants location inside the flight. The watch would detect the closest beacon by comparing the round trip time (RTT).
+          <br><br>
+          <div style="font-size:1.8em; font-weight: bold; line-height: 200%;">OUTCOME</div>
+          <b> User Experience of the Application</b><br>
+          Users could interact with the application by swiping up and down on the watch face to move within the spatial map of the plane. Users could also use the dial to navigate the menu and scroll down the page. Notifications would appear on top of the spatial map and the menu could be accessed by tapping on the three dot menu on the right side of the watch face.
+          <img src="../img/sc-app.jpg" width="70%" class="img-responsive center-block"/>
+          <div style="font-size:.7em; text-align:center; line-height: 200%;"> source: Stephanie Wong (http://veravibes.blogspot.ca/2017/01/smartcrew.html)</div>
+          <br>
+          Menu options and features<br>
+          <ul>
+            <li><b>Turbulence</b>: Flight attendants see additional details about notifications that turbulence is coming along with the duration and type. These notification are passed from the pilot to the lead flight attendants. </li>
+            <li><b>Passenger Aid</b>: Flight attendants see alerts about any medical emergencies with passengers. They can also post any new situations which are then transmitted to all or nearby flight attendants. </li>
+            <li><b>Fasten Seatbelt</b>: Flight attendants see details about notifications for fastening their seatbelt for safety. These come from the pilots, or can be set by lead flight attendants using the watch interface.</li>
+            <li><b>Crewmember Assistance</b>: Flight attendants see notifications about a particular crewmember requiring immediate assistance, the type of help required, and the person's location. They can also report the need for someone to assist them. This causes their icon on the map to change colors so that other flight attendants know they require assistance. </li>
+            <li><b>Cabin Check</b>: Flight attendants report their status during cabin check at the start of the flight. Flight attendants also see notifications about which crewmembers completed their safety and security checks and how many flight attendants are yet to finish.</li>
+            <li><b>Messaging</b>: Flight attendants can select from predefined text messages and send them to one or more flight attendants. Each predefined messages is associated with a unique vibration pattern. When a message arrives, flight attendants can either look at the watch to read it, or feel the vibration pattern to determine the message by using the app over a peroid of time. This would allow them to continue on with their current task without additional interactions</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap core JavaScript
+      ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!--script src="assets/js/ie10-viewport-bug-workaround.js"></script-->
+    <script>
+      $(function() {
+      $('a[href*=#]:not([href=#])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top
+          }, 700);
+          return false;
+        }
+      }
+      });
+      });
+    </script>
+  </body>
+</html>
