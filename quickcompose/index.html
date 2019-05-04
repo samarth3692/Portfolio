@@ -1,0 +1,175 @@
+<!DOCT TYPE html>
+<html lang="en">
+    <head>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-27735527-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'UA-27735527-1');
+        </script>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Samarth Singhal | Portofolio SIAT JIIT SFU HCI Flex-N-Feel">
+        <meta name="keywords" content="samarth, singhal, portfolio, siat, sfu, jiit, hci, Flex-N-Feel">
+        <meta name="robots" content="index, follow" >
+        <meta name="author" content="Samarth Singhal">
+        <link rel="icon" href="../img/favicon.ico" type="image/x-icon"  />
+        <title>Samarth Singhal | Quick Compose</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <script src="../js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="../css/custom.css" >
+        <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700" rel="stylesheet">
+        
+    </head>
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top" >
+            <div class="container" style="padding-top:1em;">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar" style="background-color:black"></span>
+                    <span class="icon-bar" style="background-color:black"></span>
+                    <span class="icon-bar" style="background-color:black"></span>                        
+                    </button>
+                    <a class="navbar-brand" style="font-size:1.7em; color:black; font-weight: bold;" href="../">Samarth Singhal</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar" >
+                    <ul class="nav navbar-nav navbar-right">
+                        <li ><a href="../portfolio">Work</a></li>
+                        <li><a href="../publications">Publications</a></li>
+                        <li><a href="../Samarth_Singhal_CV.pdf" target="_blank">Resume</a></li>
+                        <li class="active"><a href="../about">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <br>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="headings">Focals: Contextual messaging for smartglasses</div>
+        </div>
+        <div class="col-md-4">
+          <br>
+          <img src="../img/qc_messaging.gif" alt="things" class="img-responsive" width="350px" >
+          
+        </div>
+        <div class="col-md-6">
+          <br><span id="med">Description</span><br>
+         QuickCompose is a messaging feature to initiate conversations with your contacts on smartglasses. This feature suggests contextual pre-canned messages based on the following factors:
+         <ul>
+        <li>Time of day</li>
+        <li>Location</li>
+        <li>Calendar Events</li>
+        <li>Routines</li>
+        <li>Holidays</li>
+        </ul>
+          <br>
+        </div>
+        <div class="col-md-2">
+          </b>
+          <br><span id="med">Role</span><br>
+          Interaction Designer<br>
+          Developer<br>
+          
+          <br><span id="med">Collaborators</span><br>
+          <a href="https://www.gareyes.com/">Gabriel Reyes</a> <br>
+          Prototyping Team
+        </div>
+      </div>
+      <div class="dotbar"></div>
+      <br>  
+      <div class="row">
+        <div class="col-md-8" >
+          <div style="font-size:1.8em; font-weight: bold; line-height: 200%;">CHALLENGE</div>
+
+
+          Focals are custom-built glasses with a display only you can see and is controlled with a joystick style ring. Focals provide the user with fast access to information on the go. There is a huge demand for staying connected with the people you care about and the information you need so you can stay on top of your day. Although this form factor comes with <b>limited interaction capabilities</b> (in this case a ring). Hence considering the need for staying connected with loved ones through messaging, we wanted to provide users with a way to <b>compose messages on Focals?</b>
+
+          
+        </div>
+         <div class="col-md-4" >
+          <br><br>
+          <img src="../img/focals-input.jpeg" class="img-responsive center-block"/><br>
+        </div>
+      </div>
+
+
+
+          </b>
+          <br><br>
+
+          <div class="row">
+        <div class="col-md-12" >
+      
+          <div style="font-size:1.8em; font-weight: bold; line-height: 200%;">PROCESS</div>
+         
+          Our design process started thinking about the kind of messages users usually send and also understanding the context behind these messages. We narrowed down the scope of the project to only focus on frequent messages that are usually sent throughout a day and which are more routinely based messages. Looking at our messaging logs and brainstorming with-in the concepts team we identified the below categories of messages.
+           <ul>
+        <li>Commute related (leaving now, will be there soon, etc).</li>
+        <li>General greetings (good morning, etc.)</li>
+        <li>Meeting related messages (running late, go ahead without me, etc.)</li>
+        <li>Everyday routines (Let's grab coffee?, Let's meet in the evening, etc.)</li>
+        <li>Holidays (Happy St.Patrick's Day, etc.)</li>
+        <li>Location based (at grocery store, restaurant, etc.)</li>
+        </ul>
+
+          <br><b> Form Factor </b><br>
+          The advantage of Focals is that its form factor - its close tp the human body and the face. Hence there is a lot of rich contextual data we can extract from the glasses and sensors. Example, where is the user looking (based on GPS + IMU), the physical state of the user (walking, driving, or sitting), is the user speaking or not, is the user in a meeting, etc. Hence we decided to build a contextual engine made up of several sensor data that informs us about the contextual state of the user.
+
+          <br><br><b> Contextual Engine </b><br>
+          We used this engine along with the time of the day to suggest the top-10 pre-canned messages user might want to say at a particular moment. This engine was modelled using a Gaussian distribution which determines the likelihood for a certain messages over a course of time. Example, the screen below shows the top messages at 5:30PM in the evening for the user. We can see that most of the messages are regarding the evening commute and some regarding routine.<br><br>
+          <img src="../img/relevance-model.png" width="90%" class="img-responsive center-block"/><br>
+
+          <br><b>User Research</b><br>
+          Based on this minimum viable product, we decided to conduct to an internal study to validate our assumptions and the design probe to understand how well it fits into our target user's needs. And we quickly found out that the supported messages were very less and soon they became redundant for the users to use the same set of messages. 
+
+          <br><br>
+          We decided to broaden the categories of messages and added a category relevance to our model so better prioritize messages for the user. The diagram below depicts the final model.<br><br>
+
+          <img src="../img/relevance-model-1.png" width="90%" class="img-responsive center-block"/><br>
+
+          We also added 3-4 variations for each message based on the intent of the messages. This made sure that the user had some variety to messages everyday. For this we conducted a survey on Amazon Mechanical Turk to identify the common set of phrases people prefer to say for a particular intent.
+
+          <br><br>
+
+          After a second internal user study and looking at the feedback from our beta research, this feature was productized. We worked with the production teams to refine the interaction and visual components.
+
+         <br><br><div style="font-size:1.3em; font-weight: bold; line-height: 200%;">Next Steps</div>
+          We have been receiving feedback from our customers about this feature and there are plans to add more contextual signals to the engine to enhance its prediction.
+
+
+          <br><br>
+        </div>
+      </div>
+      <div class="dotbar"></div>
+      <br><br>
+    </div>
+    <!-- Bootstrap core JavaScript
+      ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!--script src="assets/js/ie10-viewport-bug-workaround.js"></script-->
+    <script>
+      $(function() {
+      $('a[href*=#]:not([href=#])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top
+          }, 700);
+          return false;
+        }
+      }
+      });
+      });
+    </script>
+  </body>
+</html>
