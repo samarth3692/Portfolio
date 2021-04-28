@@ -4,7 +4,6 @@ font-family: 'Quattrocento Sans', sans-serif;
 padding-top: 70px;
 font-size:18px;
 line-height: 170%;
-
 }
 
 .headings {
@@ -14,6 +13,7 @@ font-weight: bold;
 line-height: 160%;
 color: black;
 }
+
 .navbar-brand {
 	font-family: 'Permanent Marker', cursive;
 	text-decoration:  none; border-bottom: none; 
