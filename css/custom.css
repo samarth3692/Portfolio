@@ -2,7 +2,7 @@ body {
 	
 font-family: 'Quattrocento Sans', sans-serif;
 padding-top: 70px;
-font-size:16px;
+font-size:18px;
 line-height: 170%;
 
 }
@@ -15,11 +15,11 @@ line-height: 160%;
 color: black;
 }
 .navbar-brand {
-	text-decoration:  none; border-bottom: none; color:black;
+	font-family: 'Permanent Marker', cursive;
+	text-decoration:  none; border-bottom: none; 
 }
 .navbar-brand:hover {
-	text-decoration:  none; border-bottom: none; color:black;
-
+	text-decoration:  none; border-bottom: none; 
 }
 
 
