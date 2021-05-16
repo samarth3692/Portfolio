@@ -53,7 +53,19 @@
         <div class="row" >
             <div class="col-md-12"> <h3><b>Work Experience</b></h3></div>
 
-            <div class="col-md-3"> <a href="../quickcompose"> 
+            <!-- <div class="col-md-3"> <a href="../S&MTool">  -->
+            <div class="col-md-3">
+                <div id="project" onclick="passCheck()">
+                    <div align="center" class="embed-responsive embed-responsive-16by9">
+                        <img src="../img/s&mtool.jpg" alt="things" class="img-responsive">
+                    </div>
+                    <div style="  margin-top:5px; font-size:1.1em;">Sales & Marketing Tool</div>
+                    <div style="font-size:.85em;">Design: 3D Editor & Viewer </div>
+                </div>
+            </a>
+        </div>
+
+         <div class="col-md-3"> <a href="../quickcompose"> 
                 <div id="project">
                     <div align="center" class="embed-responsive embed-responsive-16by9">
                         <img src="../img/focals.gif" alt="things" class="img-responsive">
@@ -79,16 +91,6 @@
         </a>
     </div>
 
-    <div class="col-md-3"> <a href="../telepresence"> 
-        <div id="project">
-            <div align="center" class="embed-responsive embed-responsive-16by9">
-                <img src="../img/beam.jpg" alt="things" class="img-responsive">
-            </div>
-            <div style="  margin-top:5px; font-size:1.1em;">Telepresence Attendance</div>
-            <div style="font-size:.85em;">Study: Use of Telepresence Robots </div>
-        </div>
-    </a>
-</div>
 
 <div class="col-md-3"> <a href="../curatio"> 
     <div id="project">
@@ -125,6 +127,17 @@
 </a>
 </div>
 
+<div class="col-md-3"> <a href="../telepresence"> 
+        <div id="project">
+            <div align="center" class="embed-responsive embed-responsive-16by9">
+                <img src="../img/beam.jpg" alt="things" class="img-responsive">
+            </div>
+            <div style="  margin-top:5px; font-size:1.1em;">Telepresence Attendance</div>
+            <div style="font-size:.85em;">Study: Use of Telepresence Robots </div>
+        </div>
+    </a>
+</div>
+
 <div class="col-md-3"> <a href="../timeturner"> 
     <div id="project">
         <div align="center" class="embed-responsive embed-responsive-16by9">
@@ -153,19 +166,7 @@
 </div>
 
 
-<div class="col-md-3"> <a href="../ARchem"> 
-    <div id="project">
-        <div align="center" class="embed-responsive embed-responsive-16by9">
-          <video autoplay muted loop class="embed-responsive-item">
-            <source src="../video/archem.mp4" type=video/mp4>
-            </video>
 
-        </div>
-        <div style=" margin-top:5px; font-size:1.1em;">Augmented Chemistry Lab</div>
-        <div style="font-size:.85em;">Design: Teaching Molecular Geometry</div>
-    </div>
-</a>
-</div>
 
 
 </div>
@@ -202,7 +203,19 @@
 </div>
 
 
+<div class="col-md-3"> <a href="../ARchem"> 
+    <div id="project">
+        <div align="center" class="embed-responsive embed-responsive-16by9">
+          <video autoplay muted loop class="embed-responsive-item">
+            <source src="../video/archem.mp4" type=video/mp4>
+            </video>
 
+        </div>
+        <div style=" margin-top:5px; font-size:1.1em;">Augmented Chemistry Lab</div>
+        <div style="font-size:.85em;">Design: Teaching Molecular Geometry</div>
+    </div>
+</a>
+</div>
 
 
 <div class="col-md-3"> <a href="../myeyes"> 
@@ -285,27 +298,29 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
         <!--script src="assets/js/ie10-viewport-bug-workaround.js"></script-->
-        <script>
-        ()
-
-        $(document).ready(function        {
-
-
-
-            $(".gif").hover(
-                function()
-                {
-                  var src = $(this).attr("src");
-                  $(this).attr("src", src.replace(/\.jpg$/i, ".gif"));
-              },
-              function()
-              {
-                  var src = $(this).attr("src");
-                  $(this).attr("src", src.replace(/\.gif$/i, ".jpg"));
-              });
-        });
-
-
+        // <script>
+        // $(document).ready(function{
+        //     $(".gif").hover(
+        //         function()
+        //         {
+        //           var src = $(this).attr("src");
+        //           $(this).attr("src", src.replace(/\.jpg$/i, ".gif"));
+        //       },
+        //       function()
+        //       {
+        //           var src = $(this).attr("src");
+        //           $(this).attr("src", src.replace(/\.gif$/i, ".jpg"));
+        //       });
+        // });
+        // </script>
+        <script type="text/javascript">
+        function passCheck(){
+      if(prompt("Please enter your password","") == "mYwOrK2021"){
+        window.location = "../S&MTool";
+      }else{
+        alert('Incorrect password! Please try again')
+      }
+    }
         </script>
     </body>
     </html>
