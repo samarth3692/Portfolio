@@ -1,4 +1,4 @@
 AuthType Basic
 AuthName "S&M Tool"
-AuthUserFile ../video/.htpasswd
+AuthUserFile /video/.htpasswd
 require valid-user
