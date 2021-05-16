@@ -1,4 +1,4 @@
 AuthType Basic
-AuthName "Protected Site"
-AuthUserFile /S&MTool/.htpasswd
+AuthName "S&M Tool"
+AuthUserFile .htpasswd
 require valid-user
