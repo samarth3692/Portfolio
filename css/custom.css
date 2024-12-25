@@ -1,3 +1,4 @@
+
 body {
 	
 font-family: 'Quattrocento Sans', sans-serif;
@@ -29,7 +30,7 @@ body b{
 }
 
 body a {
-text-decoration:  none; border-bottom: 1px dotted; color:black; font-weight: normal;
+text-decoration:  none; border-bottom: 1.2px dotted; color:black; font-weight: normal;
 
 }
 
@@ -38,7 +39,7 @@ text-decoration:  none; border-bottom: 1px solid; color:black; font-weight: bold
 
 }
 
-.dotbar { border-top: 1px dotted; margin-top:20px}
+.dotbar { border-top: 3px dotted; margin-top:20px}
 
 #red {
 color:#ff0000;
@@ -97,6 +98,7 @@ visibility: hidden;
 #project
 {
 	border-bottom: 1px white solid;
+	line-height: 25px;
 	
 }
 
@@ -104,6 +106,7 @@ visibility: hidden;
 {
 	border-bottom: 1px solid;
 	background-color:#F7F7F7;
+
 
 
 	
